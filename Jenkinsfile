@@ -65,7 +65,7 @@ pipeline {
         withCredentials([usernamePassword(
             credentialsId: 'docker-hub-credentials',
             usernameVariable: 'trikiamine99',
-            passwordVariable: 'DFZV-XHQV'
+            passwordVariable: 'dckr_pat_Ig7zYmntMJVGAYMY5fdJZiiiWLU'
         )]) {
             sh '''
             echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
